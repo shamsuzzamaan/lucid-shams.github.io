@@ -1,0 +1,191 @@
+$primary: #008ED6;
+
+/* NAVBAR/MENU */
+.navbar {
+  background: rgba(0, 0, 0, 0.5);
+  .navbar-brand {
+    color: #fff;
+    h3 {
+      font-size: 32px;
+      font-weight: 600;
+    }
+    small {
+      font-size: 10px;
+    }
+  }
+  #navbarNav {
+      .nav-item {
+        .nav-link {
+          margin-right: 10px;
+          color: #fff;
+          text-decoration: none;
+        }
+        .nav-link:last-child {
+          margin-right: 0px;
+        }
+        .nav-link:hover {
+          border-bottom: 2px solid $primary;
+          padding-bottom: 0px;
+        }
+        .nav-link:focus {
+          border-bottom: 2px solid $primary;
+          padding-bottom: 0px;
+        }
+      }
+    }
+}
+
+/* HOME SECTION*/
+#home-section {
+  background-image: url('../img/home-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  .home-overlay {
+    background: rgba(3, 3, 3, 0.8);
+    padding-top: 150px;
+    min-height: 600px;
+    button {
+      width: 130px;
+      margin: 5px;
+    }
+  }
+}
+
+/* FEATURE SECTION*/
+#feature-section {
+  .feature {
+    img {
+      border: 1px solid #ddd;
+      border-radius: 100px;
+    }
+  }
+}
+
+/* TESTIMONIALS SECTION */
+#testimonials-section {
+  .testimonials-overlay {
+    background-image: url('../img/test-bg.jpg');
+    background-size: cover;
+  }
+  .pagination {
+    .page-item {
+      margin: 0 5px;
+    }
+  }
+}
+/* SUBSCRIBE SECTION */
+#subscribe {
+  background-color: #15141A;
+  h1 {
+    font-size: 28px;
+  }
+  .buttons {
+    margin: auto;
+    button {
+      width: 120px;
+      margin: 2px;
+    }
+  }
+}
+
+/* PRICING SECTION */
+#pricing-section {
+  .card {
+    .card-body {
+      h5 {
+        color: #7A7A7A;
+      }
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+  .card:hover {
+    .card-body {
+      background-color: #008ED6;
+      color: #fff;
+      h5 {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* CONTENT SECTION */
+#contact-section {
+  .contact-form {
+    margin-bottom: -100px;
+    form {
+      padding: 40px 40px 60px 40px;
+    }
+  }
+  .map {
+    background-image: url('../img/big-map.jpg');
+    background-size: cover;
+    min-height: 300px;
+    img {
+      height: 300px;
+      width: 100%;
+      border-right: 5px solid #fff;
+      border-left: 5px solid #fff;
+    }
+  }
+}
+
+/* FOOTER SECTION */
+#footer-section {
+  background: #15141A;
+  .social-icons {
+    color: #444348;
+    padding: 0px 10px;
+  }
+  .social-icons:hover {
+    color: #138496;
+  }
+  h5 {
+    color: #444348;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+
+/* Navbar */
+@media (max-width: 991px) {
+  .navbar {
+    position: fixed;
+    background: rgba(3, 3, 3, 0.5);
+    .navbar-nav {
+      background-color: rgba(3, 3, 3, 0.9);
+      padding: 30px 0px;
+      opacity: .95;
+      .nav-item {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* HOME SECTION*/
+@media (max-width: 991px) {
+  #home-section {
+    text-align: center;
+    h1 {
+      font-size: 48px;
+    }
+    img {
+      width: 50%;
+      height: 100%;
+    }
+  }
+}
+
+/* ABOUT SECTION*/
+@media (max-width: 991px) {
+  #about-section-long {
+    text-align: center;
+  }
+}
